@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Document metadata for character encoding and viewport scaling -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO meta tags -->
+    <meta
+      name="description"
+      content="Andrea Flowers offers beautiful, handcrafted floral arrangements for every occasion."
+    />
+    <meta name="author" content="Andrea Flowers" />
+    <meta
+      name="keywords"
+      content="flowers, bouquets, floral arrangements, delivery, wedding, gift"
+    />
+
+    <!-- FontAwesome icons kit -->
+    <script
+      src="https://kit.fontawesome.com/2db24aa7a2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Page title displayed in browser tab -->
+    <title>Andrea Flower | Home</title>
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Mobile-specific styles only applied for screens 768px wide or smaller -->
+    <link
+      rel="stylesheet"
+      href="./css/mobile.css"
+      media="only screen and (max-width: 768px)"
+    />
+    <!-- Favicon icon in browser tab -->
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
+
+    <!-- External JavaScript file loaded after HTML parsing -->
+    <script src="./js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Header containing navigation bar -->
+    <header>
+      <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-left">
+          <!-- Logo linking back to home page -->
+          <a href="./index.html"
+            ><img
+              src="./images/andrea-flowers-colour.png"
+              alt="Andrea Flowers Logo"
+              class="logo"
+          /></a>
+          <!-- Navigation links to other pages -->
+          <ul class="nav-links">
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Center area with site name -->
+        <div class="navbar-center">
+          <h2>Andrea Flowers</h2>
+        </div>
+
+        <!-- Right area with shopping bag and language icons -->
+        <div class="navbar-right" aria-label="User options">
+          <a href="#" aria-label="Shopping bag"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Language options"><i class="fa-solid fa-globe" aria-hidden="true"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2 class="contact-heading">Get in Touch</h2>
+        <!-- Contact form with POST method, currently action is placeholder '#' -->
+        <form class="contact-form" action="#" method="post" aria-label="Contact form">
+          <div class="form-row">
+            <!-- Name input, required -->
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              aria-required="true"
+            />
+            <!-- Email input, required -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-row">
+            <!-- Phone input, optional -->
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              aria-describedby="phoneHelp"
+            />
+            <!-- Subject input, required -->
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-row full-width">
+            <!-- Message textarea, required -->
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+          <!-- Submit button -->
+          <button type="submit" class="cta-button">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Visit Section -->
+    <section class="visit-section" id="visit">
+      <div class="visit-container">
+        <!-- Text info about visiting the store -->
+        <div class="visit-info">
+          <h2 class="visit-heading">Come and visit us...</h2>
+          <p>
+            Visit Andrea Flowers and discover beautiful, handcrafted bouquets
+            for every occasion. Our friendly team is ready to help you. Stop by
+            and brighten your day with fresh flowers!
+          </p>
+          <ul>
+            <li>Flowers ready to buy</li>
+            <li>Have a bouquet made while you browse our gift shop</li>
+            <li>Enjoy a coffee and have a chat with our lovely team</li>
+          </ul>
+        </div>
+
+        <!-- Embedded Google Map showing store location -->
+        <div class="visit-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0192502858414!2d144.9630583153161!3d-37.81421797975153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf9c55c1d4b0e8b5f!2sMelbourne%20CBD%2C%20VIC!5e0!3m2!1sen!2sau!4v1629854338767!5m2!1sen!2sau"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to Andrea Flowers store location"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-container">
+        <!-- Left side with business name and social media links -->
+        <div class="footer-left">
+          <h2 class="footer-heading">Andrea Flowers</h2>
+          <div class="social-icons">
+            <!-- Social media icons with aria labels for accessibility -->
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Right side with contact details and payment icons -->
+        <div class="footer-right">
+          <p><strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028</p>
+          <p>
+            <strong>Opening Hours:</strong><br />
+            Mon–Fri: 9:00am – 5:00pm<br />
+            Sat: 9:00am – 1:00pm<br />
+            Sun: Closed
+          </p>
+          <p><strong>Phone:</strong> (+421) 908 709 558</p>
+          <div class="payment-icons" aria-label="Accepted payment methods">
+            <!-- Payment method icons with aria-hidden as decorative -->
+            <i class="fab fa-cc-visa" aria-hidden="true"></i>
+            <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
+            <i class="fab fa-cc-amex" aria-hidden="true"></i>
+            <i class="fab fa-cc-paypal" aria-hidden="true"></i>
+          </div>
+          <!-- Copyright notice -->
+          <p class="copyright">© 2025 Andrea Flowers. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

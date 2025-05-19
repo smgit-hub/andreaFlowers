@@ -1,0 +1,541 @@
+/* Import Playfair Display font with variable weights and italics */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&font-display=swap");
+
+/* Define CSS variables for color palette */
+:root {
+  --primary: #f2f2f2;            /* Light background color */
+  --complementary: #400101;      /* Dark complementary color (deep red) */
+  --highlight: #F29188;          /* Highlight color (coral/pink) */
+  --brand: #6b704f;              /* Brand main color (olive green) */
+  --brand-secondary: #f2d5a0;    /* Secondary brand color (light tan) */
+}
+
+/* Smooth scrolling behavior for in-page navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reset margin, padding and set box-sizing for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles with imported font, background color, and top padding for fixed navbar */
+body {
+  font-family: "Playfair Display", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding-top: 80px; /* Reserve space for fixed navbar */
+  background-color: var(--primary);
+}
+
+/* Navbar container fixed at top with full width and fixed height */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: var(--primary);
+  color: var(--brand);
+  display: flex;
+  align-items: center;           /* Vertically center content */
+  justify-content: space-between;/* Space out left and right sections */
+  padding: 0 20px;               /* Horizontal padding */
+  z-index: 1000;                 /* Ensure navbar stays above other elements */
+}
+
+/* Left and right navbar groups styled as flex containers with spacing */
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;              /* Remove list bullet points */
+}
+
+/* Logo image size */
+.logo {
+  height: 60px;
+}
+
+/* Navbar links styling */
+.navbar a {
+  color: var(--brand);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Hover effect for navbar links */
+.navbar a:hover {
+  text-decoration: underline;
+  color: var(--highlight);
+}
+
+/* Centered navbar section positioned absolutely at center horizontally */
+.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+}
+
+/* Styling for the centered navbar heading */
+.navbar-center h2 {
+  text-align: center;
+  font-size: 28px;
+  font-style: italic;
+  color: var(--brand);
+}
+
+/* Accessibility focus outline for keyboard users */
+.navbar a:focus-visible,
+.cta-button:focus-visible {
+  outline: 2px solid var(--highlight);
+}
+
+/* Container for navigation links arranged horizontally */
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+
+/* Hero section: full viewport height with background image and gradient overlay */
+.hero {
+  height: 90vh;
+  background-image: url("../images/main-flowers.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: var(--brand);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Semi-transparent white overlay on hero for better text readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4));
+  z-index: 1;
+}
+
+/* Content inside hero section positioned above overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hero heading styling with responsive font size */
+.hero-heading {
+  color: var(--complementary);
+  font-size: clamp(2rem, 5vw, 4rem);
+  margin-top: 60px;
+}
+
+/* Hero subheading text styling with responsive size and spacing */
+.hero-text {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+/* Call-to-action button styling */
+.cta-button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: var(--highlight);
+  color: var(--primary);
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  min-height: 44px;             /* Minimum touch target size */
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Button hover effect */
+.cta-button:hover {
+  background-color: var(--complementary);
+}
+
+/* Section containing cards with padding and centered text */
+.cards-section {
+  padding: 60px 20px;
+  background-color: var(--primary);
+  text-align: center;
+}
+
+/* Section heading styling */
+.section-heading {
+  font-size: 36px;
+  color: var(--complementary);
+  margin-bottom: 40px;
+}
+
+/* Cards container with responsive grid layout */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual card styles with white background, rounded corners, and shadow */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--complementary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Card hover effect: lift and stronger shadow */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card images fill width with fixed height and object-fit for cropping */
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Focus outline for accessibility on cards */
+.card:focus {
+  outline: 2px solid var(--highlight);
+}
+
+/* Card content padding and left-aligned text */
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+/* Card title styling */
+.card-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--brand);
+}
+
+/* Price text styling in card */
+.card-content .price {
+  font-weight: bold;
+  color: var(--highlight);
+  margin-bottom: 10px;
+}
+
+/* Card paragraph styling */
+.card-content p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Reviews section with background, rounded corners, margin, and centered text */
+.reviews-section {
+  padding: 60px 20px;
+  background-color: var(--brand-secondary);
+  border-radius: 20px;
+  margin: 30px;
+  text-align: center;
+}
+
+/* Reviews container grid layout */
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Individual review card styling with padding, rounded corners, shadow, and flex layout */
+.review-card {
+  background-color: var(--primary);
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+/* Reviewer image style with circle shape, border, and margin */
+.review-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid var(--highlight);
+}
+
+/* Reviewer name/title styling */
+.review-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: var(--brand);
+}
+
+/* Quote styling inside review card */
+.review-card .quote {
+  font-style: italic;
+  font-size: 16px;
+  color: var(--complementary);
+  line-height: 1.5;
+  opacity: 0.8;
+  transform: translateY(0);
+  transition: all 0.4s ease;
+}
+
+/* Animate quote on hover: increase opacity, move up slightly, change color */
+.review-card:hover .quote {
+  opacity: 1;
+  transform: translateY(-5px);
+  color: var(--highlight);
+}
+
+/* Footer background and padding */
+.footer {
+  background-color: var(--brand);
+  color: var(--primary);
+  padding: 40px 20px;
+  margin-top: 90px;
+}
+
+/* Container inside footer for layout and spacing */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+}
+
+/* Left footer section with right border line on large screens */
+.footer-left {
+  position: relative;
+  padding-right: 40px;
+}
+
+.footer-left::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Flex sizing for left and right footer parts */
+.footer-left,
+.footer-right {
+  flex: 1 1 300px;
+}
+
+/* Footer headings styling */
+.footer-heading {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: var(--highlight);
+}
+
+/* Social media icons styling */
+.social-icons a {
+  font-size: 24px;
+  color: var(--primary);
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--highlight);
+}
+
+/* Footer right section paragraph styles */
+.footer-right p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Payment icons styling */
+.payment-icons i {
+  font-size: 28px;
+  margin-right: 10px;
+  color: var(--primary);
+}
+
+/* Copyright text styling */
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* About section background and padding */
+.about-section {
+  background-color: var(--primary);
+  padding: 60px 20px;
+}
+
+/* Container for about section with flexible layout and spacing */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* About section image styling with max width and rounded corners */
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Text container in about section */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* About section heading styling */
+.about-text h2 {
+  font-size: 32px;
+  color: var(--complementary);
+  margin-bottom: 20px;
+}
+
+/* About section paragraph styling */
+.about-text p {
+  font-size: 18px;
+  color: var(--brand);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Contact section background and padding */
+.contact-section {
+  background-color: var(--primary);
+  padding: 60px 20px;
+}
+
+/* Container for contact form */
+.contact-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Contact heading styling */
+.contact-heading {
+  font-size: 32px;
+  text-align: center;
+  color: var(--complementary);
+  margin-bottom: 40px;
+}
+
+/* Contact form layout as vertical column with gaps */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form row for inputs and textarea with wrapping */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Input and textarea styles */
+.form-row input,
+.form-row textarea {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+/* Textarea specific styles */
+textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Make form row vertical on smaller screens */
+.full-width {
+  flex-direction: column;
+}
+
+/* Align submit button to start */
+.contact-form button {
+  align-self: flex-start;
+}
+
+/* Visit section with secondary brand background and padding */
+.visit-section {
+  background-color: var(--brand-secondary);
+  padding: 60px 20px;
+  border-radius: 20px;
+  margin: 30px;
+  
+}
+
+/* Visit section container with flexbox layout */
+.visit-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+/* Visit info text container */
+.visit-info {
+  flex: 1 1 300px;
+  color: var(--complementary);
+}
+
+/* Visit section heading */
+.visit-heading {
+  font-size: 32px;
+  color: var(--complementary);
+  margin-bottom: 20px;
+}
+
+/* Paragraphs in visit info */
+.visit-info p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Map container flex sizing */
+.visit-map {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
