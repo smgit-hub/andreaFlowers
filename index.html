@@ -73,20 +73,20 @@
 
           <!-- Navigation Links -->
           <ul class="nav-links">
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./about.html" data-i18n="navAbout">About</a></li>
+            <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
           </ul>
         </div>
 
         <!-- Centered Brand Name -->
         <div class="navbar-center">
-          <h2>Andrea Flowers</h2>
+          <h2 data-i18n="navBrand">Andrea Flowers</h2>
         </div>
 
         <!-- Right-side Icons: Shopping bag and Language -->
         <div class="navbar-right">
           <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
-          <a href="#"><i class="fa-solid fa-globe"></i></a>
+          <a href="#" id="lang-toggle"><i class="fa-solid fa-globe"></i></a>
         </div>
       </nav>
     </header>
@@ -94,28 +94,26 @@
     <!-- Hero Section: Intro Banner -->
     <main class="hero">
       <div class="hero-content">
-        <h1 class="hero-heading">Flowers for every occasion</h1>
-        <p class="hero-text">
+        <h1 class="hero-heading" data-i18n="heroHeading">Flowers for every occasion</h1>
+        <p class="hero-text" data-i18n="heroText">
           <em>Welcome to Andrea Flowers where every flower tells a story...</em>
         </p>
         <!-- Call to Action Button -->
-        <a href="./contact.html" class="cta-button" role="button"
-          >Get in touch</a
-        >
+        <a href="./contact.html" class="cta-button" role="button" data-i18n="getInTouch">Get in touch</a>
       </div>
     </main>
 
     <!-- Featured Products Section -->
     <section class="cards-section">
-      <h2 class="section-heading">Featured Bouquets</h2>
+      <h2 class="section-heading" data-i18n="featuredBouquets">Featured Bouquets</h2>
       <div class="cards-container">
         <!-- Product Card 1 -->
         <a href="#" class="card">
           <img src="./images/flowers/flower1.JPG" alt="Rose Bouquet" />
           <div class="card-content">
-            <h3>Rose Bouquet</h3>
+            <h3 data-i18n="roseBouquet">Rose Bouquet</h3>
             <p class="price">$29.99</p>
-            <p>Classic red roses for romantic occasions.</p>
+            <p data-i18n="roseDescription">Classic red roses for romantic occasions.</p>
           </div>
         </a>
 
@@ -123,9 +121,9 @@
         <a href="#" class="card">
           <img src="./images/flowers/flower2.JPG" alt="Spring Mix" />
           <div class="card-content">
-            <h3>Spring Mix</h3>
+            <h3 data-i18n="springMix">Spring Mix</h3>
             <p class="price">$24.99</p>
-            <p>A vibrant selection of seasonal blooms.</p>
+            <p data-i18n="springDescription">A vibrant selection of seasonal blooms.</p>
           </div>
         </a>
 
@@ -133,9 +131,9 @@
         <a href="#" class="card">
           <img src="./images/flowers/flower3.JPG" alt="Sunflower Shine" />
           <div class="card-content">
-            <h3>Sunflower Shine</h3>
+            <h3 data-i18n="sunflowerShine">Sunflower Shine</h3>
             <p class="price">$19.99</p>
-            <p>Bright sunflowers to light up your day.</p>
+            <p data-i18n="sunflowerDescription">Bright sunflowers to light up your day.</p>
           </div>
         </a>
 
@@ -143,9 +141,9 @@
         <a href="#" class="card">
           <img src="./images/flowers/flower4.JPG" alt="Elegant Lilies" />
           <div class="card-content">
-            <h3>Elegant Lilies</h3>
+            <h3 data-i18n="elegantLilies">Elegant Lilies</h3>
             <p class="price">$34.99</p>
-            <p>Elegant white lilies perfect for any occasion.</p>
+            <p data-i18n="liliesDescription">Elegant white lilies perfect for any occasion.</p>
           </div>
         </a>
       </div>
@@ -153,7 +151,7 @@
 
     <!-- Customer Reviews Section -->
     <section class="reviews-section">
-      <h2 class="section-heading">What Our Customers Say...</h2>
+      <h2 class="section-heading" data-i18n="reviewsHeading">What Our Customers Say...</h2>
       <div class="reviews-container">
         <!-- Review 1 -->
         <div class="review-card">
@@ -162,8 +160,8 @@
             alt="Customer Jane"
             class="review-img"
           />
-          <h3>Jane D.</h3>
-          <p class="quote">
+          <h3 data-i18n="review1Name">Jane D.</h3>
+          <p class="quote" data-i18n="review1Quote">
             “Absolutely stunning arrangements! The flowers made my event
             magical.”
           </p>
@@ -176,8 +174,8 @@
             alt="Customer Mike"
             class="review-img"
           />
-          <h3>Mike R.</h3>
-          <p class="quote">
+          <h3 data-i18n="review2Name">Mike R.</h3>
+          <p class="quote" data-i18n="review2Quote">
             “Great customer service and beautiful flowers delivered on time.”
           </p>
         </div>
@@ -189,8 +187,8 @@
             alt="Customer Lila"
             class="review-img"
           />
-          <h3>Lila S.</h3>
-          <p class="quote">
+          <h3 data-i18n="review3Name">Lila S.</h3>
+          <p class="quote" data-i18n="review3Quote">
             “Andrea Flowers never disappoints! I’ve ordered multiple times and
             love it.”
           </p>
@@ -239,5 +237,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- Link to external JS for language switching -->
+    <script src="./js/lang-switcher.js"></script>
   </body>
 </html>
