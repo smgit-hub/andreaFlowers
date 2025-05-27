@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
@@ -12,11 +13,10 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-0TES67KN5C");
     </script>
 
-    <!-- Document metadata and settings -->
+    <!-- Document metadata -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -31,134 +31,147 @@
       content="flowers, bouquets, floral arrangements, delivery, wedding, gift"
     />
 
-    <!-- Font Awesome icon kit -->
+    <meta
+      name="google-site-verification"
+      content="Nn8IzK6V7B5dqVbRKDwwKoFVd1GzenbF7xkW2autkdU"
+    />
+
+    <!-- Font Awesome for icons -->
     <script
       src="https://kit.fontawesome.com/2db24aa7a2.js"
       crossorigin="anonymous"
     ></script>
 
     <!-- Page title -->
-    <title>Andrea Flower | Home</title>
+    <title>Andrea Flowers | Flower Shop</title>
 
-    <!-- External Stylesheets -->
+    <!-- External CSS Stylesheets -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- Mobile-specific stylesheet for screens <= 768px -->
     <link
       rel="stylesheet"
       href="./css/mobile.css"
       media="only screen and (max-width: 768px)"
     />
 
-    <!-- Favicon for browser tab -->
+    <!-- Favicon -->
     <link rel="icon" href="./images/favicon.png" type="image/png" />
-
-    <!-- JavaScript file, deferred loading -->
-    <script src="./js/script.js" defer></script>
   </head>
+
   <body>
-    <!-- Navbar / Header section -->
+    <!-- Header and Navigation Bar -->
     <header>
       <nav class="navbar">
-        <!-- Left side of navbar: Logo and navigation links -->
         <div class="navbar-left">
-          <a href="./index.html"
-            ><img
+          <!-- Logo -->
+          <a href="./index.html">
+            <img
               src="./images/andrea-flowers-colour.png"
               alt="Logo"
               class="logo"
-          /></a>
+            />
+          </a>
+
+          <!-- Navigation Links -->
           <ul class="nav-links">
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./about.html" data-i18n="navAbout">About</a></li>
+            <li><a href="./contact.html" data-i18n="navContact">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Center of navbar: Site name -->
+        <!-- Centered Brand Name -->
         <div class="navbar-center">
-          <h2>Andrea Flowers</h2>
+          <h2 data-i18n="navBrand">Andrea Flowers</h2>
         </div>
 
-        <!-- Right side of navbar: Shopping bag and language globe icons -->
+        <!-- Right-side Icons: Shopping bag and Language -->
         <div class="navbar-right">
           <a href="./index.html"><i class="fa-solid fa-bag-shopping"></i></a>
-          <a href="#"><i class="fa-solid fa-globe"></i></a>
+          <a href="#" id="lang-toggle">
+            <i class="fa-solid fa-globe"></i>
+            <span id="lang-label">EN</span>
+          </a>
         </div>
       </nav>
     </header>
 
-    <!-- About section describing the business -->
-    <section class="about-section" id="about">
-      <div class="about-container">
-        <!-- Image showing the exterior of the shop -->
-        <div class="about-image">
-          <img
-            src="./images/andrea-shop.jpg"
-            alt="Andrea Flowers shop exterior"
-          />
-        </div>
+     <!-- About section describing the business -->
+<section class="about-section" id="about">
+  <div class="about-container">
+    <!-- Image showing the exterior of the shop -->
+    <div class="about-image">
+      <img
+        src="./images/andrea-shop.jpg"
+        alt="Andrea Flowers shop exterior"
+      />
+    </div>
 
-        <!-- Text describing the company history and values -->
-        <div class="about-text">
-          <h2>About Andrea Flowers</h2>
-          <p>
-            Founded in 1998, Andrea Flowers has blossomed from a small local
-            boutique into one of the community's most beloved floral
-            destinations. What began as a dream by Andrea herself—armed with a
-            passion for color, fragrance, and natural beauty—has grown into a
-            family-run shop known for personal service and exquisite floral
-            arrangements.
-          </p>
-          <p>
-            Nestled in the heart of town, our shop is filled with fresh blooms
-            daily, curated by our dedicated team who believe that flowers aren’t
-            just gifts—they’re stories, celebrations, and memories in bloom.
-            Whether you're marking a milestone or simply brightening someone's
-            day, Andrea Flowers brings your sentiment to life with elegance and
-            care.
-          </p>
-        </div>
+    <!-- Text describing the company history and values -->
+    <div class="about-text">
+      <h2 data-i18n="aboutHeading">About Andrea Flowers</h2>
+      <p data-i18n="aboutParagraph1">
+        Founded in 1998, Andrea Flowers has blossomed from a small local
+        boutique into one of the community's most beloved floral
+        destinations. What began as a dream by Andrea herself—armed with a
+        passion for color, fragrance, and natural beauty—has grown into a
+        family-run shop known for personal service and exquisite floral
+        arrangements.
+      </p>
+      <p data-i18n="aboutParagraph2">
+        Nestled in the heart of town, our shop is filled with fresh blooms
+        daily, curated by our dedicated team who believe that flowers aren’t
+        just gifts—they’re stories, celebrations, and memories in bloom.
+        Whether you're marking a milestone or simply brightening someone's
+        day, Andrea Flowers brings your sentiment to life with elegance and
+        care.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-container">
+    <!-- Left side with business name and social media links -->
+    <div class="footer-left">
+      <h2 class="footer-heading" data-i18n="footerBusinessName">Andrea Flowers</h2>
+      <div class="social-icons">
+        <!-- Social media icons with aria labels for accessibility -->
+        <a href="https://www.instagram.com/" aria-label="Instagram"
+          ><i class="fab fa-instagram" aria-hidden="true"></i
+        ></a>
+        <a href="https://www.facebook.com/" aria-label="Facebook"
+          ><i class="fab fa-facebook-f" aria-hidden="true"></i
+        ></a>
       </div>
-    </section>
+    </div>
 
-    <!-- Footer section with contact and business information -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- Left side of footer: Business name and social media links -->
-        <div class="footer-left">
-          <h2 class="footer-heading">Andrea Flowers</h2>
-          <div class="social-icons">
-            <!-- Social media links with aria-labels for accessibility -->
-            <a href="#" aria-label="Instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a href="#" aria-label="Facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- Right side of footer: Address, opening hours, phone, payment options -->
-        <div class="footer-right">
-          <p>
-            <strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028
-          </p>
-          <p>
-            <strong>Opening Hours:</strong><br />
-            Mon–Fri: 9:00am – 5:00pm<br />
-            Sat: 9:00am – 1:00pm<br />
-            Sun: Closed
-          </p>
-          <p><strong>Phone:</strong> (+421) 908 709 558</p>
-          <div class="payment-icons">
-            <!-- Accepted payment method icons -->
-            <i class="fab fa-cc-visa" aria-hidden="true"></i>
-            <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
-            <i class="fab fa-cc-amex" aria-hidden="true"></i>
-            <i class="fab fa-cc-paypal" aria-hidden="true"></i>
-          </div>
-          <p class="copyright">© 2025 Andrea Flowers. All rights reserved.</p>
-        </div>
+    <!-- Right side with contact details and payment icons -->
+    <div class="footer-right">
+      <p data-i18n="footerAddress"><strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028</p>
+      <p>
+        <strong data-i18n="footerOpeningHours">Opening Hours:</strong><br />
+        <span data-i18n="footerOpeningHoursMonFri">Mon–Fri: 9:00am – 5:00pm</span><br />
+        <span data-i18n="footerOpeningHoursSat">Sat: 9:00am – 1:00pm</span><br />
+        <span data-i18n="footerOpeningHoursSun">Sun: Closed</span>
+      </p>
+      <p data-i18n="footerPhone"><strong>Phone:</strong> (+421) 908 709 558</p>
+      <div class="payment-icons" aria-label="Accepted payment methods">
+        <!-- Payment method icons with aria-hidden as decorative -->
+        <i class="fab fa-cc-visa" aria-hidden="true"></i>
+        <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
+        <i class="fab fa-cc-amex" aria-hidden="true"></i>
+        <i class="fab fa-cc-paypal" aria-hidden="true"></i>
       </div>
-    </footer>
-  </body>
+      <!-- Copyright notice -->
+      <p class="copyright" data-i18n="footerCopyright">© 2025 Andrea Flowers. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+<!-- Link to external JS for language switching -->
+<script src="./js/lang-switcher.js"></script>
+</body>
 </html>
+
+

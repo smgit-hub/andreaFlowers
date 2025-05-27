@@ -86,7 +86,10 @@
         <!-- Right-side Icons: Shopping bag and Language -->
         <div class="navbar-right">
           <a href="./index.html"><i class="fa-solid fa-bag-shopping"></i></a>
-          <a href="#" id="lang-toggle"><i class="fa-solid fa-globe"></i></a>
+          <a href="#" id="lang-toggle">
+            <i class="fa-solid fa-globe"></i>
+            <span id="lang-label">EN</span>
+          </a>
         </div>
       </nav>
     </header>
@@ -216,12 +219,14 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
+    <!-- Footer -->
     <footer class="footer" role="contentinfo">
       <div class="footer-container">
         <!-- Left side with business name and social media links -->
         <div class="footer-left">
-          <h2 class="footer-heading">Andrea Flowers</h2>
+          <h2 class="footer-heading" data-i18n="footerBusinessName">
+            Andrea Flowers
+          </h2>
           <div class="social-icons">
             <!-- Social media icons with aria labels for accessibility -->
             <a href="https://www.instagram.com/" aria-label="Instagram"
@@ -235,16 +240,21 @@
 
         <!-- Right side with contact details and payment icons -->
         <div class="footer-right">
-          <p>
+          <p data-i18n="footerAddress">
             <strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028
           </p>
           <p>
-            <strong>Opening Hours:</strong><br />
-            Mon–Fri: 9:00am – 5:00pm<br />
-            Sat: 9:00am – 1:00pm<br />
-            Sun: Closed
+            <strong data-i18n="footerOpeningHours">Opening Hours:</strong><br />
+            <span data-i18n="footerOpeningHoursMonFri"
+              >Mon–Fri: 9:00am – 5:00pm</span
+            ><br />
+            <span data-i18n="footerOpeningHoursSat">Sat: 9:00am – 1:00pm</span
+            ><br />
+            <span data-i18n="footerOpeningHoursSun">Sun: Closed</span>
           </p>
-          <p><strong>Phone:</strong> (+421) 908 709 558</p>
+          <p data-i18n="footerPhone">
+            <strong>Phone:</strong> (+421) 908 709 558
+          </p>
           <div class="payment-icons" aria-label="Accepted payment methods">
             <!-- Payment method icons with aria-hidden as decorative -->
             <i class="fab fa-cc-visa" aria-hidden="true"></i>
@@ -253,7 +263,9 @@
             <i class="fab fa-cc-paypal" aria-hidden="true"></i>
           </div>
           <!-- Copyright notice -->
-          <p class="copyright">© 2025 Andrea Flowers. All rights reserved.</p>
+          <p class="copyright" data-i18n="footerCopyright">
+            © 2025 Andrea Flowers. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
