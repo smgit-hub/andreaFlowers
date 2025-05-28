@@ -30,6 +30,10 @@ body {
   background-color: var(--primary);
 }
 
+p, a, h1, h2, h3, ul {
+  font-weight: 600;
+}
+
 /* Navbar container fixed at top with full width and fixed height */
 .navbar {
   position: fixed;
@@ -84,7 +88,6 @@ body {
   text-align: center;
   font-size: 36px;
   font-style: italic;
-font-weight: 700;  
 color: var(--brand);
 }
 
@@ -449,14 +452,14 @@ color: var(--brand);
 }
 .contact-container p {
   font-size: 18px;
-  color: var(--complementary);
+  color: var(--brand);
   text-align: center;
   margin-bottom: 40px;
 }
 
 /* Contact heading styling */
 .contact-heading {
-  font-size: 32px;
+  font-size: 38px;
   text-align: center;
   color: var(--complementary);
   margin-bottom: 40px;
