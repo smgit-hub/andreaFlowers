@@ -95,7 +95,7 @@ const translations = {
       "Az Andrea Flowers sosem okoz csalódást! Többször rendeltem már és imádom.",
 
     footerAddressLabel: "Cím:",
-    footerAddressText: "847/10 Deep utca, Ekecs Szlovákia 93028",
+    footerAddressText: "847/10 Mely utca, Ekecs Szlovákia 93028",
     footerPhoneLabel: "Telefonszám:",
     footerPhoneNumber: "(+421) 908 709 558",
 
@@ -121,7 +121,7 @@ const translations = {
     aboutHeading: "Az Andrea Flowers Üzletről – Szlovákia",
     aboutParagraph:
       "Az Andrea Flowers-t a Dunaszerdahely környéki egyik legjobb virágkötőként ismerik el, ahol a szenvedély és a szakértelem eleganciát visz minden virágkompozícióba. A minőség iránti elkötelezettségünk és a vevői elégedettség iránti törekvésünk tette az Andrea Flowers-t Szlovákia egyik kedvelt virágüzletévé. Tudjon meg többet történetünkről, és arról, miért bíznak bennünk a helyiek minden virágos igényükben.",
-    historyHeading: "**Az üzlet története",
+    historyHeading: "Az üzlet története",
     historyParagraph:
       "1998-ban alapított Andrea Virágok egy kis helyi üzletből nőtte ki magát a közösség egyik legkedveltebb virágboltjává. Andrea álmaként indult – szín, illat és természetes szépség iránti szenvedéllyel – és mára egy családi vállalkozásként működő bolt, amely személyes kiszolgálásáról és kifinomult virágkötészeti megoldásairól ismert.",
 
