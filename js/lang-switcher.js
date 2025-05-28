@@ -6,9 +6,10 @@ const translations = {
     heroHeading:
       "Your Local Florist in Ekecs – Fresh Flowers for Every Occasion",
     heroText:
-      "Andrea Flowers is your trusted flower shop in Ekecs for all occasions. Whether you need a bouquet for a birthday, anniversary, wedding, or corporate event, our expert florists craft beautiful arrangements tailored to your needs. Visit us for the freshest blooms and personalized service from the best florist in Ekecs.",
+      "Andrea Flowers is your trusted flower shop in Ekecs for all occasions. Whether you need a bouquet for a birthday, anniversary, or wedding our expert florists craft beautiful arrangements tailored to your needs. Visit us for the freshest blooms and personalised service from the best florist in Ekecs.",
     contactHeading: "Get in Touch",
-    contactParagraph: "Planning a wedding or special event? Contact Andrea Flowers for custom flower arrangements for events in Ekecs. Our dedicated team is ready to help create stunning floral displays to make your event unforgettable. Reach out today to discuss your needs with your friendly local florist.",
+    contactParagraph:
+      "Planning a wedding or special event? Contact Andrea Flowers for custom flower arrangements for events in Ekecs. Our dedicated team is ready to help create stunning floral displays to make your event unforgettable. Reach out today to discuss your needs with your friendly local florist.",
     featuredBouquets: "Featured Bouquets",
     roseBouquet: "Rose Bouquet",
     roseDescription: "Classic red roses for romantic occasions.",
@@ -73,7 +74,8 @@ const translations = {
     heroText:
       "Az Andrea Flowers a megbízható virágüzlet Ekecsen minden alkalomra. Legyen szüksége csokorra születésnapra, évfordulóra, esküvőre vagy céges rendezvényre, szakértő virágkötőink gyönyörű, az Ön igényeire szabott kompozíciókat készítenek. Látogasson el hozzánk a legfrissebb virágokért és személyre szabott kiszolgálásért, Ekecs legjobb virágkötőjétől.",
     contactHeading: "Lépjen kapcsolatba velünk",
-    contactParagraph: "Esküvőt vagy különleges eseményt tervez? Vegye fel a kapcsolatot az Andrea Flowers-szel egyedi virágkompozíciókért ekecsi rendezvényekre! Elhivatott csapatunk készen áll arra, hogy lélegzetelállító virágdekorációkat készítsen, amelyek felejthetetlenné teszik az eseményt. Lépjen velünk kapcsolatba még ma, és beszélje meg igényeit barátságos, helyi virágkötőjével!",
+    contactParagraph:
+      "Esküvőt vagy különleges eseményt tervez? Vegye fel a kapcsolatot az Andrea Flowers-szel egyedi virágkompozíciókért ekecsi rendezvényekre! Elhivatott csapatunk készen áll arra, hogy lélegzetelállító virágdekorációkat készítsen, amelyek felejthetetlenné teszik az eseményt. Lépjen velünk kapcsolatba még ma, és beszélje meg igényeit barátságos, helyi virágkötőjével!",
     featuredBouquets: "Kiemelt Csokrok",
     roseBouquet: "Rózsa Csokor",
     roseDescription: "Klasszikus vörös rózsák romantikus alkalmakra.",
