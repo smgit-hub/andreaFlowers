@@ -43,7 +43,9 @@
     ></script>
 
     <!-- Page title -->
-    <title>Contact Andrea Flowers | Slovak Flower Shop for Weddings & Funerals</title>
+    <title>
+      Contact Andrea Flowers | Slovak Flower Shop for Weddings & Funerals
+    </title>
 
     <!-- External CSS Stylesheets -->
     <link rel="stylesheet" href="./css/styles.css" />
@@ -95,111 +97,124 @@
     </header>
 
     <!-- Contact Section -->
-<section class="contact-section" id="contact">
-  <div class="contact-container">
-    <h2 class="contact-heading" data-i18n="contactHeading">Get in Touch</h2>
-    <p data-i18n="contactParagraph">Planning a wedding or special event? Contact Andrea Flowers for custom flower arrangements for events in Ekecs. Our dedicated team is ready to help create stunning floral displays to make your event unforgettable. Reach out today to discuss your needs with your friendly local florist.</p>
-    
-    <!-- Contact form with POST method, currently action is placeholder '#' -->
-    <form
-      class="contact-form"
-      action="#"
-      method="post"
-      aria-label="Contact form"
-    >
-      <div class="form-row">
-        <!-- Name input, required -->
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          required
-          aria-required="true"
-        />
-        <!-- Email input, required -->
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          required
-          aria-required="true"
-        />
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2 class="contact-heading" data-i18n="contactHeading">Get in Touch</h2>
+        <p data-i18n="contactParagraph">
+          Planning a wedding or special event? Contact Andrea Flowers for custom
+          flower arrangements for events in Ekecs. Our dedicated team is ready
+          to help create stunning floral displays to make your event
+          unforgettable. Reach out today to discuss your needs with your
+          friendly local florist.
+        </p>
+
+        <!-- Contact form with POST method, currently action is placeholder '#' -->
+        <form
+          class="contact-form"
+          action="#"
+          method="post"
+          aria-label="Contact form"
+        >
+          <div class="form-row">
+            <!-- Name input, required -->
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+              aria-required="true"
+            />
+            <!-- Email input, required -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-row">
+            <!-- Phone input, optional -->
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              aria-describedby="phoneHelp"
+            />
+            <!-- Subject input, required -->
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="form-row full-width">
+            <!-- Message textarea, required -->
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              required
+              aria-required="true"
+            ></textarea>
+          </div>
+          <!-- Submit button -->
+          <button type="submit" class="cta-button" data-i18n="sendMessage">
+            Send Message
+          </button>
+        </form>
       </div>
-      <div class="form-row">
-        <!-- Phone input, optional -->
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone Number"
-          aria-describedby="phoneHelp"
-        />
-        <!-- Subject input, required -->
-        <input
-          type="text"
-          name="subject"
-          placeholder="Subject"
-          required
-          aria-required="true"
-        />
+    </section>
+
+    <!-- Visit Section -->
+    <section class="visit-section" id="visit">
+      <div class="visit-container">
+        <!-- Text info about visiting the store -->
+        <div class="visit-info">
+          <h2 class="visit-heading" data-i18n="visitHeading">
+            Visit Our Local Florist Store in Ekecs
+          </h2>
+          <p data-i18n="visitParagraph">
+            Visit Andrea Flowers and discover beautiful, handcrafted bouquets
+            for every occasion. Our friendly team is ready to help you. Stop by
+            and brighten your day with fresh flowers!
+          </p>
+          <ul>
+            <li data-i18n="visitList1">Flowers ready to buy</li>
+            <li data-i18n="visitList2">
+              Have a bouquet made while you browse our gift shop
+            </li>
+            <li data-i18n="visitList3">
+              Enjoy a coffee and have a chat with our lovely team
+            </li>
+          </ul>
+        </div>
+
+        <!-- Embedded Google Map showing store location -->
+        <div class="visit-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.251207467664!2d17.80390487603683!3d47.892822968169426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476ba1816d46b141%3A0x3f75e9c8e246243b!2sUlica%20Hlbok%C3%A1%20847%2F10%2C%20930%2028%20Oko%C4%8D%2C%20Slovakia!5e0!3m2!1sen!2sau!4v1748302193409!5m2!1sen!2sau"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Map to Andrea Flowers store location"
+          ></iframe>
+        </div>
       </div>
-      <div class="form-row full-width">
-        <!-- Message textarea, required -->
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          required
-          aria-required="true"
-        ></textarea>
-      </div>
-      <!-- Submit button -->
-      <button type="submit" class="cta-button" data-i18n="sendMessage">
-        Send Message
-      </button>
-    </form>
-  </div>
-</section>
+    </section>
 
-<!-- Visit Section -->
-<section class="visit-section" id="visit">
-  <div class="visit-container">
-    <!-- Text info about visiting the store -->
-    <div class="visit-info">
-      <h2 class="visit-heading" data-i18n="visitHeading">Visit Our Local Florist Store in Ekecs</h2>
-      <p data-i18n="visitParagraph">
-        Visit Andrea Flowers and discover beautiful, handcrafted bouquets
-        for every occasion. Our friendly team is ready to help you. Stop by
-        and brighten your day with fresh flowers!
-      </p>
-      <ul>
-        <li data-i18n="visitList1">Flowers ready to buy</li>
-        <li data-i18n="visitList2">Have a bouquet made while you browse our gift shop</li>
-        <li data-i18n="visitList3">Enjoy a coffee and have a chat with our lovely team</li>
-      </ul>
-    </div>
-
-    <!-- Embedded Google Map showing store location -->
-    <div class="visit-map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2675.251207467664!2d17.80390487603683!3d47.892822968169426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476ba1816d46b141%3A0x3f75e9c8e246243b!2sUlica%20Hlbok%C3%A1%20847%2F10%2C%20930%2028%20Oko%C4%8D%2C%20Slovakia!5e0!3m2!1sen!2sau!4v1748302193409!5m2!1sen!2sau"
-        width="100%"
-        height="300"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Map to Andrea Flowers store location"
-      ></iframe>
-    </div>
-  </div>
-</section>
-
-
-   <!-- Footer -->
-<footer class="footer" role="contentinfo">
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
       <div class="footer-container">
         <!-- Left side with business name and social media links -->
         <div class="footer-left">
-          <h2 class="footer-heading" data-i18n="footerBusinessName">Andrea Flowers</h2>
+          <h2 class="footer-heading" data-i18n="footerBusinessName">
+            Andrea Flowers
+          </h2>
           <div class="social-icons">
             <!-- Social media icons with aria labels for accessibility -->
             <a href="https://www.instagram.com/" aria-label="Instagram"
@@ -209,18 +224,82 @@
               ><i class="fab fa-facebook-f" aria-hidden="true"></i
             ></a>
           </div>
+          <!-- Recommended Sites Section -->
+          <div class="recommended-sites">
+            <h2
+              class="footer-heading"
+              style="margin-top: 2rem"
+              data-i18n="recommendedSites"
+            >
+              Have a look at these recommended sites:
+            </h2>
+            <ul class="recommended-links">
+              <li>
+                <a
+                  href="https://vibescafe.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >Vibes Café</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://juliansherman2020.github.io/driproomcafe.io/index.html"
+                  target="_blank"
+                  rel="noopener"
+                  >Drip Room Café</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://korerocafe.netlify.app/"
+                  target="_blank"
+                  rel="noopener"
+                  >Korero Café</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://thenestcafe.onrender.com"
+                  target="_blank"
+                  rel="noopener"
+                  >The Nest Café</a
+                >
+              </li>
+              <li>
+                <a href="https://makehere.store" target="_blank" rel="noopener"
+                  >MakeHere Store</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://local-cafe.pages.dev/"
+                  target="_blank"
+                  rel="noopener"
+                  >Local Café</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    
+
         <!-- Right side with contact details and payment icons -->
         <div class="footer-right">
-          <p data-i18n="footerAddress"><strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028</p>
+          <p data-i18n="footerAddress">
+            <strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028
+          </p>
           <p>
             <strong data-i18n="footerOpeningHours">Opening Hours:</strong><br />
-            <span data-i18n="footerOpeningHoursMonFri">Mon–Fri: 9:00am – 5:00pm</span><br />
-            <span data-i18n="footerOpeningHoursSat">Sat: 9:00am – 1:00pm</span><br />
+            <span data-i18n="footerOpeningHoursMonFri"
+              >Mon–Fri: 9:00am – 5:00pm</span
+            ><br />
+            <span data-i18n="footerOpeningHoursSat">Sat: 9:00am – 1:00pm</span
+            ><br />
             <span data-i18n="footerOpeningHoursSun">Sun: Closed</span>
           </p>
-          <p data-i18n="footerPhone"><strong>Phone:</strong> (+421) 908 709 558</p>
+          <p data-i18n="footerPhone">
+            <strong>Phone:</strong> (+421) 908 709 558
+          </p>
           <div class="payment-icons" aria-label="Accepted payment methods">
             <!-- Payment method icons with aria-hidden as decorative -->
             <i class="fab fa-cc-visa" aria-hidden="true"></i>
@@ -229,11 +308,13 @@
             <i class="fab fa-cc-paypal" aria-hidden="true"></i>
           </div>
           <!-- Copyright notice -->
-          <p class="copyright" data-i18n="footerCopyright">© 2025 Andrea Flowers. All rights reserved.</p>
+          <p class="copyright" data-i18n="footerCopyright">
+            © 2025 Andrea Flowers. All rights reserved.
+          </p>
+          <p class="site-author">Site by Sean Millard.</p>
         </div>
       </div>
     </footer>
-    
 
     <!-- Link to external JS for language switching -->
     <script src="./js/lang-switcher.js"></script>

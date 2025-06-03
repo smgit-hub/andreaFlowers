@@ -1,58 +1,63 @@
 /* Responsive styles for screens 768px and below */
 @media (max-width: 768px) {
-    /* Navbar stacks vertically with padding */
-    .navbar {
-      flex-direction: column;
-      height: auto;
-      padding: 10px;
-    }
-  
-    /* Navbar left and right sections wrap and center on small screens */
-    .navbar-left,
-    .navbar-right {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-    /* Navbar center loses absolute positioning on small screens */
-    .navbar-center {
-      position: static;
-      transform: none;
-      margin-top: 10px;
-    }
-  
-    /* Smaller font size for navbar center heading on small devices */
-    .navbar-center h2 {
-      font-size: 24px;
-    }
-  
-    /* Adjust hero heading positioning and spacing */
-    .hero-heading {
-      position: static;
-      margin-bottom: 20px;
-    }
-
-    .contact-heading {
-      position: static;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-  
-    /* Remove divider line in footer left on small screens */
-    .footer-left::after {
-      display: none;
-    }
-  
-    /* Remove padding in footer left and right sections on small devices */
-    .footer-left,
-    .footer-right {
-      padding: 0;
-    }
-  
-    /* Contact form rows become vertical on small screens */
-    .contact-form .form-row {
-      flex-direction: column;
-    }
+  /* Navbar stacks vertically with padding */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
   }
-  
+
+  /* Navbar left and right sections wrap and center on small screens */
+  .navbar-left,
+  .navbar-right {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Navbar center loses absolute positioning on small screens */
+  .navbar-center {
+    position: static;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  /* Smaller font size for navbar center heading on small devices */
+  .navbar-center h2 {
+    font-size: 24px;
+  }
+
+  /* Adjust hero heading positioning and spacing */
+  .hero-heading {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .contact-section {
+    padding-top: 140px; /* clear fixed navbar */
+  }
+
+  .contact-heading {
+    position: relative;
+    z-index: 10;
+    margin-bottom: 20px;
+  }
+
+
+  /* Remove divider line in footer left on small screens */
+  .footer-left::after {
+    display: none;
+  }
+
+  /* Remove padding in footer left and right sections on small devices */
+  .footer-left,
+  .footer-right {
+    padding: 0;
+  }
+
+  /* Contact form rows become vertical on small screens */
+  .contact-form .form-row {
+    flex-direction: column;
+  }
+}
+

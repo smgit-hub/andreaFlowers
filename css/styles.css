@@ -1,13 +1,14 @@
 /* Import Playfair Display font with variable weights and italics */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&font-display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 
 /* Define CSS variables for color palette */
 :root {
-  --primary: #f2f2f2;            /* Light background color */
-  --complementary: #400101;      /* Dark complementary color (deep red) */
-  --highlight: #F29188;          /* Highlight color (coral/pink) */
-  --brand: #6b704f;              /* Brand main color (olive green) */
-  --brand-secondary: #f2d5a0;    /* Secondary brand color (light tan) */
+  --primary: #f2f2f2; /* Light background color */
+  --complementary: #400101; /* Dark complementary color (deep red) */
+  --highlight: #f29188; /* Highlight color (coral/pink) */
+  --brand: #6b704f; /* Brand main color (olive green) */
+  --brand-secondary: #f2d5a0; /* Secondary brand color (light tan) */
 }
 
 /* Smooth scrolling behavior for in-page navigation */
@@ -20,6 +21,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-weight: 600;
 }
 
 /* Body styles with imported font, background color, and top padding for fixed navbar */
@@ -28,10 +30,6 @@ body {
   margin: 0;
   padding-top: 80px; /* Reserve space for fixed navbar */
   background-color: var(--primary);
-}
-
-p, a, h1, h2, h3, ul {
-  font-weight: 600;
 }
 
 /* Navbar container fixed at top with full width and fixed height */
@@ -43,10 +41,10 @@ p, a, h1, h2, h3, ul {
   background-color: var(--primary);
   color: var(--brand);
   display: flex;
-  align-items: center;           /* Vertically center content */
-  justify-content: space-between;/* Space out left and right sections */
-  padding: 0 20px;               /* Horizontal padding */
-  z-index: 1000;                 /* Ensure navbar stays above other elements */
+  align-items: center; /* Vertically center content */
+  justify-content: space-between; /* Space out left and right sections */
+  padding: 0 20px; /* Horizontal padding */
+  z-index: 1000; /* Ensure navbar stays above other elements */
 }
 
 /* Left and right navbar groups styled as flex containers with spacing */
@@ -55,7 +53,7 @@ p, a, h1, h2, h3, ul {
   display: flex;
   align-items: center;
   gap: 15px;
-  list-style: none;              /* Remove list bullet points */
+  list-style: none; /* Remove list bullet points */
 }
 
 /* Logo image size */
@@ -88,7 +86,7 @@ p, a, h1, h2, h3, ul {
   text-align: center;
   font-size: 36px;
   font-style: italic;
-color: var(--brand);
+  color: var(--brand);
 }
 
 /* Accessibility focus outline for keyboard users */
@@ -125,7 +123,10 @@ color: var(--brand);
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.6)
+  );
   z-index: 1;
 }
 
@@ -138,17 +139,19 @@ color: var(--brand);
 /* Hero heading styling with responsive font size */
 .hero-heading {
   color: var(--complementary);
-  font-size: clamp(4rem, 3vw, 4rem);
+  font-size: clamp(3rem, 5vw + 1rem, 5rem);
   font-weight: 700;
   margin-bottom: 80px;
+  line-height: 1.1;
 }
 
 /* Hero subheading text styling with responsive size and spacing */
 .hero-text {
-  font-size: clamp(1.5rem, 2vw, 2.5rem);
+  font-size: clamp(1.25rem, 2vw + 0.5rem, 2.5rem);
   color: var(--complementary);
   font-weight: 600;
   margin-bottom: 60px;
+  line-height: 1.4;
 }
 
 /* Call-to-action button styling */
@@ -161,7 +164,7 @@ color: var(--brand);
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
-  min-height: 44px;             /* Minimum touch target size */
+  min-height: 44px; /* Minimum touch target size */
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
@@ -426,7 +429,9 @@ color: var(--brand);
 }
 
 /* About section heading styling */
-.about-text h1, h2, h3 {
+.about-text h1,
+h2,
+h3 {
   font-size: 32px;
   color: var(--complementary);
   margin-bottom: 20px;
@@ -458,12 +463,22 @@ color: var(--brand);
   margin-bottom: 40px;
 }
 
-/* Contact heading styling */
+/* Responsive Contact Heading */
 .contact-heading {
-  font-size: 38px;
+  font-size: clamp(2rem, 5vw + 1rem, 3.5rem);
   text-align: center;
   color: var(--complementary);
   margin-bottom: 40px;
+  margin-top: 0; /* remove fixed margin-top */
+}
+
+/* Responsive paragraph inside contact container */
+.contact-container p {
+  font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+  color: var(--complementary);
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 
 /* Contact form layout as vertical column with gaps */
@@ -513,7 +528,6 @@ textarea {
   padding: 60px 20px;
   border-radius: 20px;
   margin: 30px;
-  
 }
 
 /* Visit section container with flexbox layout */
@@ -557,7 +571,6 @@ textarea {
   padding: 60px 20px;
 }
 
-
 .store-info {
   flex: 1 1 300px;
   background-color: var(--brand-secondary);
@@ -578,4 +591,22 @@ textarea {
   font-size: 32px;
   color: var(--complementary);
   margin-bottom: 20px;
+}
+
+.recommended-sites {
+  margin-top: 2rem;
+}
+
+.recommended-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recommended-links li {
+  margin-bottom: 0.5rem;
+}
+
+.recommended-links a {
+  color: #fff; /* Or your theme’s footer link color */
+  text-decoration: underline;
 }

@@ -65,6 +65,7 @@ const translations = {
       "At Andrea Flowers, our passionate florists bring creativity and care to every bouquet. Each team member brings years of floral design experience and a personal love for crafting meaningful arrangements.",
     visitTeamParagraph2:
       "Nestled in the heart of Ekecs, Slovakia, our shop is filled with fresh blooms daily, curated by our dedicated team who believe that flowers aren’t just gifts—they’re stories, celebrations, and memories in bloom. Whether you're marking a milestone or simply brightening someone's day, Andrea Flowers brings your sentiment to life with elegance and care.",
+    recommendedSites: "Have a look at these recommended sites:",
   },
   hu: {
     navAbout: "Rólunk",
@@ -132,6 +133,7 @@ const translations = {
       "Az Andrea Virágoknál szenvedélyes virágkötőink minden csokorba kreativitást és gondoskodást visznek. Csapatunk minden tagja több éves tapasztalattal és a virágkötészet iránti személyes szenvedéllyel rendelkezik.",
     visitTeamParagraph2:
       "Ekecs, Szlovákia szívében megbújva üzletünk naponta friss virágokkal telik meg, amelyeket elhivatott csapatunk válogat össze – hiszünk abban, hogy a virágok nem csupán ajándékok, hanem történetek, ünnepek és emlékek, amelyek virágba borulnak. Legyen szó egy fontos mérföldkő megünnepléséről vagy csak egy nap megszépítéséről, az Andrea Flowers eleganciával és gondoskodással kelti életre az Ön érzéseit.",
+    recommendedSites: "Nézd meg ezeket az ajánlott oldalakat:",
   },
 };
 
