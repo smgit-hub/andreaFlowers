@@ -1,12 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <!-- Google tag (gtag.js) -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-0TES67KN5C"
-    ></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0TES67KN5C"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -30,17 +26,13 @@
       name="keywords"
       content="flowers, bouquets, floral arrangements, delivery, wedding, gift"
     />
-
-    <meta
-      name="google-site-verification"
-      content="Nn8IzK6V7B5dqVbRKDwwKoFVd1GzenbF7xkW2autkdU"
-    />
+    <meta name="google-site-verification" content="Nn8IzK6V7B5dqVbRKDwwKoFVd1GzenbF7xkW2autkdU" />
 
     <!-- Font Awesome for icons -->
-    <script
-      src="https://kit.fontawesome.com/2db24aa7a2.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/2db24aa7a2.js" crossorigin="anonymous"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
     <!-- Page title -->
     <title>
@@ -62,7 +54,7 @@
   <body>
     <!-- Header and Navigation Bar -->
     <header>
-      <nav class="navbar">
+      <nav class="navbar" data-aos="fade-down">
         <div class="navbar-left">
           <!-- Logo -->
           <a href="./index.html">
@@ -72,7 +64,6 @@
               class="logo"
             />
           </a>
-
           <!-- Navigation Links -->
           <ul class="nav-links">
             <li><a href="./about.html" data-i18n="navAbout">About</a></li>
@@ -85,7 +76,7 @@
           <a href="./index.html" data-i18n="navBrand">Andrea Flowers</a>
         </div>
 
-        <!-- Right-side Icons: Shopping bag and Language -->
+        <!-- Right-side Icons -->
         <div class="navbar-right">
           <a href="./index.html"><i class="fa-solid fa-bag-shopping"></i></a>
           <a href="#" id="lang-toggle">
@@ -96,82 +87,55 @@
       </nav>
     </header>
 
-    <!-- Hero Section: Intro Banner -->
+    <!-- Hero Section -->
     <main class="hero">
-      <div class="hero-content">
+      <div class="hero-content" data-aos="fade-up">
         <h1 class="hero-heading" data-i18n="heroHeading">
           Your Local Florist in Ekecs – Fresh Flowers for Every Occasion
         </h1>
-
-        <!-- Call to Action Button -->
-        <a
-          href="./contact.html"
-          class="cta-button"
-          role="button"
-          data-i18n="getInTouch"
-          >Get in touch</a
-        >
+        <a href="./contact.html" class="cta-button" role="button" data-i18n="getInTouch" data-aos="fade-up" data-aos-delay="200">
+          Get in touch
+        </a>
       </div>
     </main>
 
     <!-- Featured Products Section -->
     <section class="cards-section">
-      <p class="hero-text" data-i18n="heroText">
-        Andrea Flowers is your trusted flower shop in Ekecs for all occasions.
-        Whether you need a bouquet for a birthday, anniversary, or wedding our
-        expert florists craft beautiful arrangements tailored to your needs.
-        Visit us for the freshest blooms and personalised service from the best
-        florist in Ekecs.
+      <p class="hero-text" data-i18n="heroText" data-aos="fade-up">
+        Andrea Flowers is your trusted flower shop in Ekecs for all occasions...
       </p>
-      <h2 class="section-heading" data-i18n="featuredBouquets">
-        Featured Bouquets
-      </h2>
+      <h2 class="section-heading" data-i18n="featuredBouquets" data-aos="fade-up">Featured Bouquets</h2>
       <div class="cards-container">
-        <!-- Product Card 1 -->
-        <a href="#" class="card">
+        <a href="#" class="card" data-aos="zoom-in">
           <img src="./images/flowers/flower1.JPG" alt="Rose Bouquet" />
           <div class="card-content">
             <h3 data-i18n="roseBouquet">Rose Bouquet</h3>
             <p class="price">€29.99</p>
-            <p data-i18n="roseDescription">
-              Classic red roses for romantic occasions.
-            </p>
+            <p data-i18n="roseDescription">Classic red roses for romantic occasions.</p>
           </div>
         </a>
-
-        <!-- Product Card 2 -->
-        <a href="#" class="card">
+        <a href="#" class="card" data-aos="zoom-in" data-aos-delay="100">
           <img src="./images/flowers/flower2.JPG" alt="Spring Mix" />
           <div class="card-content">
             <h3 data-i18n="springMix">Spring Mix</h3>
             <p class="price">€24.99</p>
-            <p data-i18n="springDescription">
-              A vibrant selection of seasonal blooms.
-            </p>
+            <p data-i18n="springDescription">A vibrant selection of seasonal blooms.</p>
           </div>
         </a>
-
-        <!-- Product Card 3 -->
-        <a href="#" class="card">
+        <a href="#" class="card" data-aos="zoom-in" data-aos-delay="200">
           <img src="./images/flowers/flower3.JPG" alt="Sunflower Shine" />
           <div class="card-content">
             <h3 data-i18n="sunflowerShine">Sunflower Shine</h3>
             <p class="price">€19.99</p>
-            <p data-i18n="sunflowerDescription">
-              Bright sunflowers to light up your day.
-            </p>
+            <p data-i18n="sunflowerDescription">Bright sunflowers to light up your day.</p>
           </div>
         </a>
-
-        <!-- Product Card 4 -->
-        <a href="#" class="card">
+        <a href="#" class="card" data-aos="zoom-in" data-aos-delay="300">
           <img src="./images/flowers/flower4.JPG" alt="Elegant Lilies" />
           <div class="card-content">
             <h3 data-i18n="elegantLilies">Elegant Lilies</h3>
             <p class="price">€34.99</p>
-            <p data-i18n="liliesDescription">
-              Elegant white lilies perfect for any occasion.
-            </p>
+            <p data-i18n="liliesDescription">Elegant white lilies perfect for any occasion.</p>
           </div>
         </a>
       </div>
@@ -179,154 +143,73 @@
 
     <!-- Customer Reviews Section -->
     <section class="reviews-section">
-      <h2 class="section-heading" data-i18n="reviewsHeading">
+      <h2 class="section-heading" data-i18n="reviewsHeading" data-aos="fade-up">
         What Our Customers Say...
       </h2>
       <div class="reviews-container">
-        <!-- Review 1 -->
-        <div class="review-card">
-          <img
-            src="./images/customer1.jpg"
-            alt="Customer Jane"
-            class="review-img"
-          />
+        <div class="review-card" data-aos="fade-right">
+          <img src="./images/customer1.jpg" alt="Customer Jane" class="review-img" />
           <h3 data-i18n="review1Name">Jane D.</h3>
           <p class="quote" data-i18n="review1Quote">
-            “Absolutely stunning arrangements! The flowers made my event
-            magical.”
+            “Absolutely stunning arrangements! The flowers made my event magical.”
           </p>
         </div>
-
-        <!-- Review 2 -->
-        <div class="review-card">
-          <img
-            src="./images/customer2.jpg"
-            alt="Customer Mike"
-            class="review-img"
-          />
+        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="./images/customer2.jpg" alt="Customer Mike" class="review-img" />
           <h3 data-i18n="review2Name">Mike R.</h3>
           <p class="quote" data-i18n="review2Quote">
             “Great customer service and beautiful flowers delivered on time.”
           </p>
         </div>
-
-        <!-- Review 3 -->
-        <div class="review-card">
-          <img
-            src="./images/customer3.jpg"
-            alt="Customer Lila"
-            class="review-img"
-          />
+        <div class="review-card" data-aos="fade-left" data-aos-delay="200">
+          <img src="./images/customer3.jpg" alt="Customer Lila" class="review-img" />
           <h3 data-i18n="review3Name">Lila S.</h3>
           <p class="quote" data-i18n="review3Quote">
-            “Andrea Flowers never disappoints! I’ve ordered multiple times and
-            love it.”
+            “Andrea Flowers never disappoints! I’ve ordered multiple times and love it.”
           </p>
         </div>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo" data-aos="fade-up">
       <div class="footer-container">
-        <!-- Left side with business name and social media links -->
         <div class="footer-left">
-          <h2 class="footer-heading" data-i18n="footerBusinessName">
-            Andrea Flowers
-          </h2>
+          <h2 class="footer-heading" data-i18n="footerBusinessName">Andrea Flowers</h2>
           <div class="social-icons">
-            <!-- Social media icons with aria labels for accessibility -->
-            <a href="https://www.instagram.com/" aria-label="Instagram"
-              ><i class="fab fa-instagram" aria-hidden="true"></i
-            ></a>
-            <a href="https://www.facebook.com/" aria-label="Facebook"
-              ><i class="fab fa-facebook-f" aria-hidden="true"></i
-            ></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
           </div>
-          <!-- Recommended Sites Section -->
           <div class="recommended-sites">
-            <h2
-              class="footer-heading"
-              style="margin-top: 2rem"
-              data-i18n="recommendedSites"
-            >
+            <h2 class="footer-heading" style="margin-top: 2rem" data-i18n="recommendedSites">
               Have a look at these recommended sites:
             </h2>
             <ul class="recommended-links">
-              <li>
-                <a
-                  href="https://vibescafe.netlify.app/"
-                  target="_blank"
-                  rel="noopener"
-                  >Vibes Café</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://juliansherman2020.github.io/driproomcafe.io/index.html"
-                  target="_blank"
-                  rel="noopener"
-                  >Drip Room Café</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://korerocafe.netlify.app/"
-                  target="_blank"
-                  rel="noopener"
-                  >Korero Café</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://thenestcafe.onrender.com"
-                  target="_blank"
-                  rel="noopener"
-                  >The Nest Café</a
-                >
-              </li>
-              <li>
-                <a href="https://makehere.store" target="_blank" rel="noopener"
-                  >MakeHere Store</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://local-cafe.pages.dev/"
-                  target="_blank"
-                  rel="noopener"
-                  >Local Café</a
-                >
-              </li>
+              <li><a href="https://vibescafe.netlify.app/" target="_blank" rel="noopener">Vibes Café</a></li>
+              <li><a href="https://juliansherman2020.github.io/driproomcafe.io/index.html" target="_blank" rel="noopener">Drip Room Café</a></li>
+              <li><a href="https://korerocafe.netlify.app/" target="_blank" rel="noopener">Korero Café</a></li>
+              <li><a href="https://thenestcafe.onrender.com" target="_blank" rel="noopener">The Nest Café</a></li>
+              <li><a href="https://makehere.store" target="_blank" rel="noopener">MakeHere Store</a></li>
+              <li><a href="https://local-cafe.pages.dev/" target="_blank" rel="noopener">Local Café</a></li>
             </ul>
           </div>
         </div>
 
-        <!-- Right side with contact details and payment icons -->
         <div class="footer-right">
-          <p data-i18n="footerAddress">
-            <strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028
-          </p>
+          <p data-i18n="footerAddress"><strong>Address:</strong> 847/10 Deep Street, Ekecs Slovakia 93028</p>
           <p>
             <strong data-i18n="footerOpeningHours">Opening Hours:</strong><br />
-            <span data-i18n="footerOpeningHoursMonFri"
-              >Mon–Fri: 9:00am – 5:00pm</span
-            ><br />
-            <span data-i18n="footerOpeningHoursSat">Sat: 9:00am – 1:00pm</span
-            ><br />
+            <span data-i18n="footerOpeningHoursMonFri">Mon–Fri: 9:00am – 5:00pm</span><br />
+            <span data-i18n="footerOpeningHoursSat">Sat: 9:00am – 1:00pm</span><br />
             <span data-i18n="footerOpeningHoursSun">Sun: Closed</span>
           </p>
-          <p data-i18n="footerPhone">
-            <strong>Phone:</strong> (+421) 908 709 558
-          </p>
+          <p data-i18n="footerPhone"><strong>Phone:</strong> (+421) 908 709 558</p>
           <div class="payment-icons" aria-label="Accepted payment methods">
-            <!-- Payment method icons with aria-hidden as decorative -->
             <i class="fab fa-cc-visa" aria-hidden="true"></i>
             <i class="fab fa-cc-mastercard" aria-hidden="true"></i>
             <i class="fab fa-cc-amex" aria-hidden="true"></i>
             <i class="fab fa-cc-paypal" aria-hidden="true"></i>
           </div>
-          <!-- Copyright notice -->
           <p class="copyright" data-i18n="footerCopyright">
             © 2025 Andrea Flowers. All rights reserved.
           </p>
@@ -335,7 +218,16 @@
       </div>
     </footer>
 
-    <!-- Link to external JS for language switching -->
+    <!-- External JS Scripts -->
     <script src="./js/lang-switcher.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
   </body>
 </html>

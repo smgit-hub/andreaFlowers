@@ -147,7 +147,7 @@ body {
 
 /* Hero subheading text styling with responsive size and spacing */
 .hero-text {
-  font-size: clamp(1.25rem, 2vw + 0.5rem, 2.5rem);
+  font-size: clamp(1rem, 1.75vw + 0.25rem, 2.25rem);
   color: var(--complementary);
   font-weight: 600;
   margin-bottom: 60px;
