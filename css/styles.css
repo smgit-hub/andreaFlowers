@@ -17,11 +17,10 @@ html {
 }
 
 /* Reset margin, padding and set box-sizing for all elements */
-* {
+:where(*) {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-weight: 600;
 }
 
 /* Body styles with imported font, background color, and top padding for fixed navbar */
@@ -430,8 +429,8 @@ body {
 
 /* About section heading styling */
 .about-text h1,
-h2,
-h3 {
+.about-text h2,
+.about-text h3 {
   font-size: 32px;
   color: var(--complementary);
   margin-bottom: 20px;
@@ -455,12 +454,6 @@ h3 {
 .contact-container {
   max-width: 1000px;
   margin: 0 auto;
-}
-.contact-container p {
-  font-size: 18px;
-  color: var(--complementary);
-  text-align: center;
-  margin-bottom: 40px;
 }
 
 /* Responsive Contact Heading */

@@ -2,18 +2,20 @@
 @media (max-width: 768px) {
   /* Navbar stacks vertically with padding */
   .navbar {
+    display: flex;
     flex-direction: column;
     height: auto;
     padding: 10px;
   }
 
-  /* Navbar left and right sections wrap and center on small screens */
-  .navbar-left,
-  .navbar-right {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    /* Navbar left and right sections wrap and center on small screens */
+    .navbar-left,
+    .navbar-right {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
   /* Navbar center loses absolute positioning on small screens */
   .navbar-center {
@@ -22,8 +24,8 @@
     margin-top: 10px;
   }
 
-  /* Smaller font size for navbar center heading on small devices */
-  .navbar-center h2 {
+  /* Smaller font size for navbar center link on small devices */
+  .navbar-center a {
     font-size: 24px;
   }
 
